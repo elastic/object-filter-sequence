@@ -11,9 +11,7 @@ jobs:
   test-vers:
     strategy:
       matrix:
-        # 8.6.0 is included because it is the min version currently supported
-        # by apm-agent-nodejs.git, the main user of this package.
-        node: ['6', '8.6.0', '8', '10', '12', '14']
+        node: ['6', '8', '10', '12', '14']
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
