@@ -6,7 +6,7 @@
   "scripts": {
     "precoverage": "npm run test",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "pretest": "standard",
+    "lint": "standard",
     "test": "nyc tape test.js"
   },
   "keywords": [
